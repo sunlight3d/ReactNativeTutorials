@@ -12,7 +12,7 @@ class ContentComponent extends React.Component {
 export default class DinosaurComponent extends React.Component {
   render() {
     let myImage = {uri: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/LA-Triceratops_mount-2.jpg/1920px-LA-Triceratops_mount-2.jpg"};
-    let size = {width: 190, height: 190};
+    let size = {width: 390, height: 90};
     return (
         <View>
           <Text>props in React Native - Nguyen Duc Hoang</Text>
@@ -20,7 +20,7 @@ export default class DinosaurComponent extends React.Component {
               source={myImage}
               style={size}
           />
-          <ContentComponent content="Triceratops skeleton 123"/>
+          <ContentComponent content="Triceratops skeleton."/>
         </View>
     );
   }
