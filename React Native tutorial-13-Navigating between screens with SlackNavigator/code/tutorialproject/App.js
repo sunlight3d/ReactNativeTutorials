@@ -2,16 +2,14 @@ import React from 'react';
 import {Text, View } from 'react-native';
 
 import { StackNavigator } from 'react-navigation';
-import FirstScreen from './components/FirstScreen';
-import SecondScreen from './components/SecondScreen';
+import  FirstScreen  from './screens/FirstScreen'
+import  SecondScreen  from './screens/SecondScreen'
 
-const App = StackNavigator({
-    Home: {screen: FirstScreen},
-    Chat: {screen: SecondScreen},
+const Navigation = StackNavigator({
+    First: {screen: FirstScreen},
+    Second: {screen: SecondScreen}
 });
 
-
-// AppRegistry.registerComponent('Example of SlackNavigator', () => App);
-export default App; // Export your root navigator as the root component
+export default Navigation; // Export your root navigator as the root component
 
 
