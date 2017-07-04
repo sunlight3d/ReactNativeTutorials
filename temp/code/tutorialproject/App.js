@@ -1,10 +1,9 @@
 import React from 'react';
 import {Text, View } from 'react-native';
 
-import { TabNavigator } from  "react-navigation";
 import FirstScreen from './tabs/FirstScreen'
 import SecondScreen from './tabs/SecondScreen'
-
+import {TabNavigator} from "react-navigation";
 
 var MainScreenNavigator = TabNavigator({
     Tab1: {screen: FirstScreen},
@@ -14,19 +13,20 @@ var MainScreenNavigator = TabNavigator({
     swipeEnabled: true,
     tabBarOptions: {
         activeTintColor: 'white',
-        activeBackgroundColor: 'darkgreen',
         inactiveTintColor: 'black',
+        activeBackgroundColor: 'darkgreen',
         inactiveBackgroundColor: 'green',
         labelStyle: {
-            fontSize: 16,
-            padding:0
+            fontSize: 15,
+            padding: 0
         }
     }
-}
-);
+});
 
 MainScreenNavigator.navigationOptions = {
-    title: "Tab example"
+    title: 'My Chats',
 };
 
-export default MainScreenNavigator;
+export default MainScreenNavigator; // Export your root navigator as the root component
+
+
