@@ -1,4 +1,5 @@
 {
-  "name": "tutorialproject",
-  "displayName": "tutorialproject"
+  "expo": {
+    "sdkVersion": "18.0.0"
+  }
 }
